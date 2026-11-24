@@ -1,0 +1,20 @@
+NOMBRE DEL PROYECTO:
+SIGECAM - Sistema Integral de Gestión de Capacitaciones y Certificaciones de Mantenimiento.
+
+PROBLEMA:
+El seguimiento de las capacitaciones y certificaciones del personal de mantenimiento puede 
+resultar complicado cuando la información de técnicos, cursos realizados y fechas de 
+vencimiento se encuentra dispersa en diferentes registros. Esto dificulta identificar las 
+necesidades de capacitación y dar seguimiento a las recertificaciones.
+
+OBJETIVO:
+Desarrollar una plataforma web que permita administrar y dar seguimiento a las 
+capacitaciones y certificaciones del personal de mantenimiento, centralizando la 
+información para facilitar el control de cursos, técnicos, evaluaciones, asistencias y 
+vigencias de certificación.
+
+DESCRIPCIÓN:
+SIGECAM es un sistema web enfocado en mejorar la administración de las capacitaciones
+y certificaciones del personal de mantenimiento. Permitirá registrar técnicos, administrar
+cursos, consultar historiales de capacitación, controlar las fechas de vencimiento de
+certificaciones y generar reportes.
