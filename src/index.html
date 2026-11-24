@@ -3,77 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGECAM | Gestión de Capacitaciones</title>
+
+    <title>SIGECAM | Sistema de Gestión</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #263445;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12345a;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav h1 {
+            font-size: 28px;
+        }
+
+        nav span {
+            color: #80c5f0;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #12345a, #2875a8);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 28px;
+            background-color: #80c5f0;
+            color: #12345a;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #12345a;
+            margin-bottom: 18px;
+            font-size: 28px;
+        }
+
+        .descripcion {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .beneficios {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .tarjeta h3 {
+            color: #2875a8;
+            margin-bottom: 12px;
+        }
+
+        .banner {
+            background: linear-gradient(120deg, #16436c, #3989ba);
+            color: white;
+            padding: 45px 20px;
+            border-radius: 12px;
+        }
+
+        .banner h2 {
+            color: white;
+        }
+
+        .contacto {
+            background-color: #e5edf5;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
-        <h1>SIGECAM</h1>
-        <h2>Gestiona, capacita y certifica de manera eficiente</h2>
-        <p>
-            Una solución digital para mejorar el control
-            de las capacitaciones del personal de mantenimiento.
-        </p>
+        <nav>
+            <h1>SIGECAM<span>.</span></h1>
+            <p>Gestión de Capacitaciones y Certificaciones</p>
+        </nav>
     </header>
 
     <main>
 
-        <section>
-            <h2>¿Por qué utilizar SIGECAM?</h2>
+        <div class="hero">
+            <h2>Gestiona, capacita y certifica</h2>
 
             <p>
-                Administrar las capacitaciones y certificaciones
-                requiere organización y seguimiento constante.
-                SIGECAM permite concentrar la información en
-                un solo lugar, facilitando la consulta y
-                planeación de las actividades de capacitación.
+                Una plataforma diseñada para facilitar
+                la administración de capacitaciones,
+                cursos y certificaciones del personal
+                de mantenimiento.
             </p>
-        </section>
+
+            <a href="#beneficios" class="boton">
+                Conoce más
+            </a>
+        </div>
 
         <section>
-            <h2>Principales beneficios</h2>
+            <div class="descripcion">
+                <h2>¿Qué es SIGECAM?</h2>
 
-            <article>
-                <h3>1. Información centralizada</h3>
                 <p>
-                    Consulta la información de los técnicos,
-                    cursos y certificaciones desde una misma
-                    plataforma.
+                    SIGECAM es un sistema integral que busca
+                    mejorar el control y seguimiento de las
+                    capacitaciones del personal de mantenimiento.
+                    Su propósito es centralizar la información
+                    de los técnicos, cursos, evaluaciones y
+                    certificaciones, facilitando la planeación
+                    y organización de las actividades.
                 </p>
-            </article>
-
-            <article>
-                <h3>2. Control de certificaciones</h3>
-                <p>
-                    Facilita el seguimiento de las fechas
-                    de vencimiento y las recertificaciones
-                    del personal.
-                </p>
-            </article>
-
-            <article>
-                <h3>3. Mejor organización</h3>
-                <p>
-                    Permite planear las capacitaciones,
-                    consultar historiales y dar seguimiento
-                    a las actividades realizadas.
-                </p>
-            </article>
-        </section>
-
-        <section>
-            <div style="background: linear-gradient(135deg, #12345a, #2875a8);
-                        color: white; padding: 45px; text-align: center;">
-                <h2>SIGECAM</h2>
-                <p>
-                    Impulsando el desarrollo y la preparación
-                    del personal de mantenimiento.
-                </p>
-                <h3>Capacitación organizada, personal preparado.</h3>
             </div>
         </section>
 
+        <section id="beneficios">
+            <h2>Beneficios principales</h2>
+
+            <div class="beneficios">
+
+                <div class="tarjeta">
+                    <h3>Información centralizada</h3>
+                    <p>
+                        Consulta los datos de técnicos,
+                        cursos y certificaciones en
+                        un solo lugar.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Control de certificaciones</h3>
+                    <p>
+                        Facilita el seguimiento de
+                        vigencias y próximas
+                        recertificaciones.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Organización eficiente</h3>
+                    <p>
+                        Mejora la planeación de cursos
+                        y el seguimiento de las
+                        capacitaciones realizadas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="banner">
+                <h2>El desarrollo del personal es nuestra prioridad</h2>
+
+                <p>
+                    SIGECAM ayuda a organizar los procesos
+                    de capacitación y fortalecer el
+                    seguimiento del talento técnico.
+                </p>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                ¿Te interesa conocer más sobre SIGECAM?
+            </p>
+
+            <p><strong>Responsable:</strong> Carlos Alberto Romero López</p>
+            <p><strong>Correo:</strong> contacto.sigecam@gmail.com</p>
+            <p><strong>Proyecto:</strong> Sistema académico SIGECAM</p>
+        </section>
+
     </main>
+
+    <footer>
+        <p>© 2026 SIGECAM - Proyecto académico</p>
+        <p>Gestión eficiente de capacitaciones y certificaciones.</p>
+    </footer>
 
 </body>
 </html>
